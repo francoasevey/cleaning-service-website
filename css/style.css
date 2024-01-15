@@ -434,3 +434,42 @@ img{
     margin: 0;
     color: var(--text-light-gray);
 }
+
+.contact-grid{
+    max-width: 1000px;
+    margin: auto;
+}
+.contact-info{
+    grid-column: span 5;
+}
+.contact-form{
+    grid-column: span 7;
+}
+.contact-info-item{
+    position: relative;
+    padding: 20px 0 20px 70px;
+}
+.contact-info-item + .contact-info-item{
+    margin-top: 20px;
+    border-top: 1px solid var(--border-color);
+}
+.contact-info-item i{
+    height: 50px;
+    width: 50px;
+    background-color: var(--bg-color);
+    box-shadow: var(--shadow);
+    color: var(--main-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    top: 20px;
+}
+.contact-info-item h3{
+    margin: 0 0 10px;
+    font-size: var(--fs-xl);
+    font-weight: 500;
+    text-transform: capitalize;
+}
