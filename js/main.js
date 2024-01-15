@@ -1,3 +1,7 @@
+window.addEventListener("load", () =>{
+    AOS.init();
+});
+
 const headerBg = () =>{
     const header = document.querySelector(".js-header");
 
