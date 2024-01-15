@@ -1,5 +1,11 @@
 window.addEventListener("load", () =>{
-    AOS.init();
+    const preloader = document.querySelector(".js-preloader");
+    preloader.classList.add("fade-out");
+
+    setTimeout(() =>{
+        preloader.style.display = "none";
+        AOS.init();
+    }, 600);
 });
 
 const headerBg = () =>{
